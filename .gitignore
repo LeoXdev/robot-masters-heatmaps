@@ -1,0 +1,20 @@
+# project
+temp/
+
+# python
+.venv/
+__pycache__/
+
+# yolo
+runs/
+*.cache
+# ignore default yolo models
+src/ml/scripts/*.pt
+# ignore training data but keep dataset.yaml
+src/ml/data/*/images/
+src/ml/data/*/labels/
+# ignore yolo's output after training, keep demo predictions
+src/ml/models/*/weights
+src/ml/models/*/*.png
+src/ml/models/*/*.jpg
+src/ml/models/*/*.yaml

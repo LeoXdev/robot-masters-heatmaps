@@ -1,0 +1,9 @@
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: player
+  1: player shot
+  2: enemy
+  3: enemy shot
