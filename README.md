@@ -7,10 +7,10 @@ Analyze boss movement patterns in Megaman games to visualize safe and dangerous 
    - [In-game settings](#in-game-settings-options)
    - [OS settings](#os-settings)
    - [OBS Studio settings](#obs-studio-settings)
-5. [Architecture](#architecture)
+4. [Architecture](#architecture)
 5. [TODO](#todo)
-5. [Disclaimer](#disclaimer)
-5. [Icons and Fonts](#icons-and-fonts)
+6. [Disclaimer](#disclaimer)
+7. [Icons and Fonts](#icons-and-fonts)
 
 #### How To Use:
 1. Open gameplay footage by clicking on the "Open Video" button at the top menu bar.
@@ -33,6 +33,7 @@ does not guarantee accurate results:
 | Game | Supported Robot Masters |
 | :------------ | :------------ |
 | Megaman 10 | Solarman |
+
 ^Updates to the project will contain support for more robot masters.
 
 Notes:
@@ -114,7 +115,7 @@ single function from Orchestrator.
 passing parameters to them and saving the results (returns).
 - While executing Business modules, Orchestrator reads and modifies State.
 - State emits signals on modification.
-- View listen for State's signals, on receiving such, executes functions that exclusively modify UI.
+- View listens for State's signals, on receiving such, executes functions that exclusively modify UI.
 
 Notes:
 - There's only one window for this application.
@@ -144,7 +145,7 @@ Something akin to the following would do:
         #torch.cuda.empty_cache()
 ```
 - Perhaps support for multiple-GPU usage on training/prediction.
-- Hardcoded routes may not be compatible on all OS.
+- Hardcoded routes may not be compatible on all OS; pending revision.
 
 ##### Disclaimer
 This software is a non-profit, educational project not affiliated with, endorsed by, or sponsored by Capcom.
